@@ -69,4 +69,6 @@ class TemplateClassifier(ClassifierMixin, BaseEstimator):
         return self.y_[closest]
     
 meineklasse=TemplateClassifier()
-blume=TemplateClassifier(iris_X_test[0])
+meineklasse.fit(X,Y)
+print(meineklasse.predict(iris_X_test))
+print(iris_y_test)
